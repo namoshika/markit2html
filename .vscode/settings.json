@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["m2hconfig.json", "m2hconfig.*.json"],
+            "url": "./config/m2hconfig.schema.json"
+        }
+    ]
+}

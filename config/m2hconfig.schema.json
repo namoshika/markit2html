@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "markit2html config format",
+    "type": "object",
+    "properties": {
+        "src": {
+            "type": "string",
+            "default": "./src"
+        },
+        "out": {
+            "type": "string",
+            "default": "./out"
+        },
+        "inline": {
+            "type": "boolean",
+            "default": true
+        },
+        "styleFiles": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "string"
+            }
+        },
+        "scriptFiles": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "string"
+            }
+        },
+        "fontFamily": {
+            "type": "string"
+        },
+        "fontSize": {
+            "type": "number"
+        },
+        "lineHeight": {
+            "type": "number"
+        }
+    }
+}

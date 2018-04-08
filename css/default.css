@@ -1,0 +1,80 @@
+/* Microsoft VS Code\resources\app\out\vs\workbench\parts\html\browser\webview-pre.js */
+/* const color = new vscode.ThemeColor('badge.background'); */
+:root {
+    /* --background-color: #1e1e1e; */
+    /* --color: #d4d4d4; */
+    --background-color: #ffffff;
+    --color: #000000;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", HelveticaNeue-Light, "Noto Sans", Meiryo, "Hiragino Kaku Gothic Pro", "Source Han Sans J", "Source Han Sans JP", "Source Han Sans", "Sazanami Gothic", "IPA Gothic", sans-serif;
+    --font-size: 13px;
+    --font-weight: normal;
+    --link-color: #4080d0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body a {
+    color: var(--link-color);
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid -webkit-focus-ring-color;
+    outline-offset: -1px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 121, 121, 0.4);
+}
+
+body.vscode-light::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+body.vscode-high-contrast::-webkit-scrollbar-thumb {
+    background-color: rgba(111, 195, 223, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.7);
+}
+
+body.vscode-light::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.7);
+}
+
+body.vscode-high-contrast::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(111, 195, 223, 0.8);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(85, 85, 85, 0.8);
+}
+
+body.vscode-light::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.vscode-high-contrast::-webkit-scrollbar-thumb:active {
+    background-color: rgba(111, 195, 223, 0.8);
+}

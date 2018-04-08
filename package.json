@@ -1,0 +1,32 @@
+{
+    "name": "markit2html",
+    "version": "1.0.0",
+    "description": "Save Markdown as HTML(Standalone)",
+    "main": "out/index.js",
+    "bin": "out/bin/cli.js",
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "test": "mocha ./test/**/*.js"
+    },
+    "author": "namoshika",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^2.15.1",
+        "findup-sync": "^2.0.0",
+        "fs-extra": "^5.0.0",
+        "highlight.js": "^9.12.0",
+        "markdown-it": "^8.4.1",
+        "posthtml": "^0.11.3",
+        "posthtml-inline-assets": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/commander": "^2.12.2",
+        "@types/findup-sync": "^0.3.29",
+        "@types/fs-extra": "^5.0.1",
+        "@types/highlight.js": "^9.12.2",
+        "@types/markdown-it": "^0.0.4",
+        "@types/node": "^9.4.7",
+        "typescript": "^2.7.2"
+    }
+}
