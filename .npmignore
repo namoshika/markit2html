@@ -1,4 +1,6 @@
 .vscode/
+out/hello.*
 src/
+test/
 .gitignore
 tsconfig.json

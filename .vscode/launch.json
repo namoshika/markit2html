@@ -23,6 +23,7 @@
                 "--colors",
                 "${file}"
             ],
+            "autoAttachChildProcesses": true,
             "internalConsoleOptions": "openOnSessionStart"
         },
     ]
