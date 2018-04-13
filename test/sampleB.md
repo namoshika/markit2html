@@ -20,7 +20,7 @@ hello wourld
 
 > 引用。
 > 改行はダブルスペース  
-> わっふるわっふる
+> わっふるわっふる :)
 
 ```js
 console.log("hello world")
