@@ -2,6 +2,6 @@
 out/**/*.js.map
 out/hello.*
 src/
-test/
+__test__/
 .gitignore
 tsconfig.json

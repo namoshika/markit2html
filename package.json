@@ -8,7 +8,21 @@
     "scripts": {
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "test": "mocha ./test/**/test.*.js"
+        "test": "jest"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
     },
     "author": "namoshika",
     "license": "MIT",
@@ -26,11 +40,12 @@
         "@types/find-up": "^2.1.1",
         "@types/fs-extra": "^5.0.1",
         "@types/highlight.js": "^9.12.2",
+        "@types/jest": "^22.2.3",
         "@types/markdown-it": "^0.0.4",
         "@types/node": "^9.4.7",
-        "chai": "^4.1.2",
+        "jest": "^22.4.3",
         "markdown-it-emoji": "^1.4.0",
-        "mocha": "^5.0.5",
+        "ts-jest": "^22.4.2",
         "typescript": "^2.7.2"
     }
 }

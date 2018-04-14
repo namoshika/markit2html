@@ -60,4 +60,4 @@ typings/
 # append
 node_modules/
 /out/
-/test/result/
+/__test__/result/
