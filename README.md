@@ -1,11 +1,11 @@
 # markit2html
 Convert Markdown to standalone HTML (VSCode Style).
 
-# License
+## License
 MIT license.  
 Copyright (C) 2018 namoshika
 
-# Usage
+## Usage
 CLI Tool
 ```bash
 markit2html --init
