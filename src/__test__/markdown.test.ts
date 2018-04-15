@@ -1,5 +1,5 @@
 import fs from "fs-extra"
-import { markdown } from "../out"
+import m2h, { markdown } from "../"
 
 describe("markdown", () => {
     test("Markdown to HTML (string)", async () => {

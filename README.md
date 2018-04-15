@@ -6,7 +6,7 @@ MIT license.
 Copyright (C) 2018 namoshika
 
 ## Usage
-CLI Tool
+use on CLI
 ```bash
 markit2html --init
 # m2hconfig.jsonが生成される
@@ -19,9 +19,9 @@ markit2html
 # outに.htmlファイルが出力
 ```
 
-Library
+use on JS
 ```js
-import m2h, { markdown } from "../out"
+import m2h from "markit2html"
 
 // カレントディレクトリにm2hconfig.jsonが生成される。
 // 生成されたフォルダがワークスペースとなる。
@@ -30,11 +30,18 @@ m2h.initConfig(".")
 // ワークスペースからm2hconfig.jsonを取得。
 // srcフォルダ内のファイルを変換し、outフォルダへ出力する (m2hconfig.jsonで設定可能)
 m2h.compile(".")
-
+```
+inner API
+```js
 // ライブラリ用途向けAPI
-let conf = m2h.getConfig(".")
+import { markdown } from "markit2html"
 let compiler = new markdown.Md2HtmlCompiler()
-compiler.compileFile("sample.md", "sample.html")
-compiler.compileDir("./workspaceDir", conf)
-compiler.compileString("# Markdown String", "~/basePath").then(html => console.log(html))
+
+// HTMLテキストとして取得
+let mdStr = await compiler.compileString("# Markdown String", "~/basePath")
+// HTMLファイルとして書き出し
+await compiler.compileFile("sample.md", "sample.html")
+// ディレクトリ配下のMDファイルを書き出し
+let conf = m2h.getConfig(".")
+await compiler.compileDir("./workspaceDir", conf)
 ```

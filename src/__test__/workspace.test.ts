@@ -1,6 +1,6 @@
 import fs from "fs-extra"
 import process from "process"
-import m2h from "../out"
+import m2h from "../"
 
 describe("workspace", () => {
     test("Get workspace config", async () => {

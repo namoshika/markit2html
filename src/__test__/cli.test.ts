@@ -3,7 +3,7 @@ import child_process from "child_process"
 import path from "path"
 import fs from "fs-extra"
 
-let workspaceDir = path.resolve(__dirname, "../")
+let workspaceDir = path.resolve(__dirname, "../../")
 describe("cli module", () => {
     beforeAll(() => {
         fs.emptyDirSync(`${__dirname}/result/test05`)
